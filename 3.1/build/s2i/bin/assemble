@@ -174,7 +174,7 @@ fi
 
 if [ "$DEV_MODE" == true ]; then
   # fix permissions
-  fix-permissions /opt/app-root
+  # fix-permissions /opt/app-root
 
   exit 0
 fi
