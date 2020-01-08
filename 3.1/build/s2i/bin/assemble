@@ -174,7 +174,7 @@ fi
 
 if [ "$DEV_MODE" == true ]; then
   # fix permissions
-  fix-permissions /opt/app-root
+  # fix-permissions /opt/app-root
 
   exit 0
 fi
@@ -239,7 +239,7 @@ chmod +x "$DOTNET_APP_PATH/$DOTNET_DEFAULT_CMD"
 
 if [ "$DOTNET_PACK" == "true" ]; then
   echo "---> Packing application..."
-  fix-permissions $DOTNET_APP_PATH
+ # fix-permissions $DOTNET_APP_PATH
   tar -czf /opt/app-root/app.tar.gz -C $DOTNET_APP_PATH .
 fi
 
@@ -257,4 +257,4 @@ if [ "$DOTNET_RM_SRC" == "true" ]; then
 fi
 
 # fix permissions
-fix-permissions /opt/app-root
+# fix-permissions /opt/app-root
